@@ -5,10 +5,12 @@ public class Artist {
     private int id;
     private String name;
 
+    // Used when adding a new artist (id not yet assigned by the database)
     public Artist(String name) {
         this.name = name;
     }
 
+    // Used when reading from the database or updating an existing artist
     public Artist(int id, String name) {
         this.id = id;
         this.name = name;
